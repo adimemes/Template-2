@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 
-<body class="scroll-smooth">
+<body class="overflow-hidden scroll-smooth">
     <!-- Buka Undangan -->
-    <section>1
+    <section id="landing">
         <div class=" hero min-h-screen relative " style="background-image: url(./Asset/cober\ 1.png);  
         background-size: cover;  
         background-position: right;  
@@ -43,7 +43,7 @@
     <!-- Buka Undangan -->
 
     <!-- Mempelai -->
-    <section class="bg-gradient-to-b from-[#E6E6E6] from-0% to-[#737373] to-100% ">
+    <section id="nextSection" class="bg-gradient-to-b from-[#E6E6E6] from-0% to-[#737373] to-100% ">
         <div class=" hero min-h-screen relative " style="background-image: url(./Asset/bg\ waktu\ dan\ tempat.png);  
         background-size: cover;  
         background-position: center;  
@@ -146,7 +146,7 @@
                     </div>
                 </div>
 
-                <!--  -->
+                <!--Tanggal-->
                 <div class="mt-14">
                     <!-- Judul -->
                     <h1 class="text-[48px] md:text-[80px] text-center font-great-vibes text-[#947549] mb-10"
@@ -155,12 +155,12 @@
                     </h1>
 
                     <!-- Container utama -->
-                    <div class="mx-4 md:mx-auto font-montserrat" style="max-width: 32rem;">
+                    <div class="mx-5 md:mx-auto font-montserrat" style="max-width: 32rem;">
                         <div class="bg-black/55 backdrop-blur-md border border-white/30 rounded-3xl p-6 shadow-lg w-full"
                             data-aos="zoom-in">
                             <div class="relative">
                                 <img src="Asset/Vector/bunga waktu.svg" alt=""
-                                    class="md:scale-x-125 absolute -top-28 -left-4 -translate-x-1/2 w-[200px] h-[200px] md:w-[243px] md:h-[259px] -z-50">
+                                    class="md:scale-x-125 absolute -top-20 left-2 md:-top-28 md:-left-4 -translate-x-1/2 w-[180px] h-[180px] md:w-[243px] md:h-[259px] -z-50">
 
                                 <div class="flex" id="date-section">
                                     <div class="text-white pr-5 md:pr-12 font-bold">
@@ -211,7 +211,8 @@
                                     </div>
                                 </div>
                                 <img src="Asset/Vector/bunga waktu kiri.svg" alt=""
-                                    class="md:scale-x-125 absolute -bottom-28 -right-60 -translate-x-1/2 w-[200px] h-[200px] md:w-[230px] md:h-[239px] -z-50">
+                                    class="hidden md:block md:scale-x-125 absolute -bottom-24 -right-36 md:-bottom-28 md:-right-60 -translate-x-1/2 w-[180px] h-[180px] md:w-[230px] md:h-[239px] -z-50">
+
 
                             </div>
                         </div>
@@ -235,8 +236,9 @@
     </section>
     <!-- Mempelai End -->
 
+    <!-- countdown dan gallery -->
     <section
-        class=" bg-gradient-to-b from-[#161616] from-0% to-[#000000] to-100% relative min-h-screen flex flex-col items-center justify-start py-10">
+        class="relative bg-gradient-to-b from-[#161616] from-0% to-[#000000] to-100%  min-h-screen flex flex-col items-center justify-start py-24">
 
         <div class="mb-10" data-aos="zoom-in">
             <h1 class="text-4xl md:text-5xl text-center font-great-vibes text-[#FFE2B9]">
@@ -295,19 +297,47 @@
                 Momen Bahagia
             </h1>
         </div>
-        <div class="mt-10 max-w-6xl mx-2 md:mx-10">
-            <div class="grid grid-cols-3 gap-4">
-                <img src="./Asset/gallery/image.png" alt="Image 1" class="w-[354px] h-[472px] object-cover">
-                <img src="./Asset/gallery/gambar 2.png" alt="Image 2" class="w-[354px] h-[472px] object-cover">
-                <img src="./Asset/gallery/gambar 3.png" alt="Image 3" class="w-[354px] h-[472px] object-cover">
-                <img src="./Asset/gallery/gambar 4.png" alt="Image 4" class="w-[354px] h-[472px] object-cover">
-                <img src="./Asset/gallery/gambar 5.png" alt="Image 5" class="w-[354px] h-[472px] object-cover">
-                <img src="./Asset/gallery/gambar 6.png" alt="Image 6" class="w-[354px] h-[472px] object-cover">
-                <img src="./Asset/gallery/gambar 7.png" alt="Image 7" class="w-[354px] h-[472px] object-cover">
-                <img src="./Asset/gallery/gambar 8.png" alt="Image 8" class="w-[354px] h-[472px] object-cover">
-                <img src="./Asset/gallery/gambar 9.png" alt="Image 9" class="w-[354px] h-[472px] object-cover">
+        <div class="mt-10 max-w-6xl mx-4 md:mx-10">
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <a href="./Asset/gallery/image.png" class="popup-link">
+                    <img src="./Asset/gallery/image.png" alt="Image 1"
+                        class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
+                </a>
+                <a href="./Asset/gallery/gambar 2.png" class="popup-link">
+                    <img src="./Asset/gallery/gambar 2.png" alt="Image 1"
+                        class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
+                </a>
+                <a href="./Asset/gallery/gambar 3.png" class="popup-link">
+                    <img src="./Asset/gallery/gambar 3.png" alt="Image 1"
+                        class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
+                </a>
+                <a href="./Asset/gallery/gambar 4.png" class="popup-link">
+                    <img src="./Asset/gallery/gambar 4.png" alt="Image 1"
+                        class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
+                </a>
+                <a href="./Asset/gallery/gambar 5.png" class="popup-link">
+                    <img src="./Asset/gallery/gambar 5.png"  alt="Image 1"
+                        class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
+                </a>
+                <a href="./Asset/gallery/gambar 6.png" class="popup-link">
+                    <img src="./Asset/gallery/gambar 6.png" alt="Image 1"
+                        class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
+                </a>
+                <a href="./Asset/gallery/gambar 7.png" class="popup-link">
+                    <img src="./Asset/gallery/gambar 7.png" alt="Image 1"
+                        class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
+                </a>
+                <a href="./Asset/gallery/gambar 8.png" class="popup-link">
+                    <img src="./Asset/gallery/gambar 8.png" alt="Image 1"
+                        class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
+                </a>
+                <a href="./Asset/gallery/gambar 9.png" class="popup-link">
+                    <img src="./Asset/gallery/gambar 9.png" alt="Image 1"
+                        class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
+                </a>
             </div>
         </div>
+
 
         <!-- Pop UP -->
         <div id="popupModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-80 flex items-center justify-center">
@@ -331,7 +361,179 @@
             </div>
         </div>
         <!-- pop up End -->
+
+        <div class="absolute bottom-[-1px] left-0 w-full">
+            <img src="Asset/batasan form.png" alt="batasan" class="w-full overflow-hidden">
+        </div>
     </section>
+    <!-- Countdown dan Gallery end -->
+
+    <!-- form -->
+    <section class="min-h-screen flex flex-col items-center justify-start py-10" style="background: linear-gradient(90deg, rgba(226, 226, 226, 1) 0%, rgba(178, 178, 178, 0) 50%, rgba(226, 226, 226, 1) 100%), url('./Asset/form\ putih.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;">
+        <div class="pt-8 pb-6 container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl text-center font-great-vibes text-[#947549]" data-aos="fade-up"
+                data-aos-delay="450">Mohon Doa
+                Restu</h1>
+        </div>
+        <div
+            class="bg-black/55 border border-black/55 rounded-xl p-6 shadow-lg font-montserrat mx-4 md:mx-auto md:w-1/2">
+            <form id="formUcapan" class="space-y-6">
+                <!-- Input Nama -->
+                <div>
+                    <input id="inputNama" type="text" placeholder="Masukan Nama"
+                        class="w-full bg-transparent border-b border-black/55 text-white placeholder-white pb-2 focus:outline-none focus:border-[#FFE2B9]"
+                        required />
+                </div>
+
+                <!-- Input Ucapan -->
+                <div>
+                    <input id="inputUcapan" type="text" placeholder="Berikan Ucapanmu"
+                        class="w-full bg-transparent border-b border-black/55 text-white placeholder-white pb-2 focus:outline-none focus:border-[#FFE2B9]"
+                        required />
+                </div>
+
+                <!-- Pilihan Kehadiran -->
+                <div class="text-white text-sm">
+                    <p class="mb-2">Apakah kamu hadir?</p>
+                    <div class="flex flex-wrap gap-2">
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="radio" name="kehadiran" value="Hadir"
+                                class="form-radio w-5 h-5 text-[#FFE2B9] focus:ring focus:ring-[#FFE2B9]" required />
+                            <span>Hadir</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="radio" name="kehadiran" value="Tidak Hadir"
+                                class="form-radio w-5 h-5 text-[#FFE2B9] focus:ring focus:ring-[#FFE2B9]" required />
+                            <span>Tidak Hadir</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input type="radio" name="kehadiran" value="Masih Ragu"
+                                class="form-radio w-5 h-5 text-[#FFE2B9] focus:ring focus:ring-[#FFE2B9]" required />
+                            <span>Masih Ragu</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Tombol Kirim -->
+                <button type="submit"
+                    class="w-full flex items-center justify-center rounded-full border bg-gradient-to-r from-[#FFE2B9] from-0% to-[#9C8A71] to-100% px-6 py-3 text-sm font-medium text-black hover:bg-gold hover:ring-1 hover:ring-brown focus:outline-none focus:ring active:text-brown">
+                    Kirim Ucapan
+                </button>
+            </form>
+        </div>
+
+        <div class="mt-8 max-w-xl mx-9 p-6 container">
+            <h2 class="text-center text-4xl md:text-5xl mb-6 font-great-vibes text-[#947549]">Ucapan Doa</h2>
+            <div id="listUcapan" class="space-y-4 max-h-[400px] overflow-y-auto">
+                <!-- Ucapan akan ditambahkan di sini -->
+            </div>
+        </div>
+    </section>
+    <!-- End Form -->
+
+    <!-- Gift -->
+    <section class="pt-9 pb-16 bg-[#E2E2E2] -mt-px">
+        <h1 class="text-center text-4xl md:text-5xl mb-6 font-great-vibes text-[#947549]" data-aos="zoom-in">Amplop
+            Digital</h1>
+        <div class="flex flex-col items-center gap-4 p-6" data-aos="fade-up">
+            <div class="flex flex-col gap-4 w-full max-w-md font-montserrat text-white">
+                <!-- Card 1 -->
+                <div class="relative bg-black/55 border border-black/55 rounded-xl p-6 shadow-lg w-full">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xl font-bold mt-10 rekening">744534283</p>
+                            <p class="text-xs md:text-base mb-10">A A RJ ANGLURAH PUTRA GD AG</p>
+                        </div>
+                        <img src="Asset/Logo-BCA-PNG 1.png" alt="BCA Logo" class="w-[70px]">
+                    </div>
+                    <button type="button"
+                        class="salin-rekening w-full flex items-center justify-center rounded-full border bg-gradient-to-r from-[#FFE2B9] from-0% to-[#9C8A71] to-100%  py-3 text-sm font-medium text-black hover:bg-gold hover:ring-1 hover:ring-brown focus:outline-none focus:ring active:text-brown">
+                        Salin Rekening
+                    </button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="relative bg-black/55 border border-black/55 rounded-xl p-6 shadow-lg w-full">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xl font-bold mt-10 rekening">744534283</p>
+                            <p class="text-xs md:text-base mb-10">A A RJ ANGLURAH PUTRA GD AG</p>
+                        </div>
+                        <img src="Asset/Logo-BCA-PNG 1.png" alt="BCA Logo" class="w-[70px]">
+                    </div>
+                    <button type="button"
+                        class="salin-rekening w-full flex items-center justify-center rounded-full border bg-gradient-to-r from-[#FFE2B9] from-0% to-[#9C8A71] to-100%  py-3 text-sm font-medium text-black hover:bg-gold hover:ring-1 hover:ring-brown focus:outline-none focus:ring active:text-brown">
+                        Salin Rekening
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- footer -->
+    <section class="bg-white hero min-h-screen flex flex-col items-center justify-center relative" style="background-image: url(./Asset/footer.png);  
+        background-size: cover;  
+        background-position: center;  
+        background-repeat: no-repeat;">
+        <div class="absolute top-[-1px] left-0 w-full md:block z-0">
+            <img src="Asset/batasan 2.png" alt="merah" class="w-full overflow-hidden">
+        </div>
+        <div class="text-center" data-aos="zoom-in">
+            <!-- Ucapan Terima Kasih -->
+            <p class="text-sm md:text-base font-montserrat mb-8 font-semibold text-wh">
+                Terima kasih atas ucapan, doa, dan kesediaannya untuk datang di acara pernikahan kami.
+            </p>
+
+            <!-- Logo -->
+            <div class="flex justify-center mt-20 mb-4">
+                <img src="Asset/Icon_digala.png" alt="Logo" class="w-16 h-16">
+            </div>
+
+            <!-- Footer -->
+            <p class="text-xs font-semibold md:text-sm text-wh font-montserrat">
+                Invitation by Digala Invitation
+            </p>
+
+            <!-- Social Media -->
+            <div class="flex items-center justify-center mt-2 space-x-4 pb-6">
+                <a href="" class="text-white text-lg"><img src="Asset/vector/whastapp.svg" alt=""></a>
+                <a href="https://www.instagram.com/digalainvitation/" target="_blank" class="text-white text-lg"> <img
+                        src="Asset/vector/instagram.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Icon -->
+    <div class="fixed bottom-4 right-4">
+        <button id="music-icon" class="p-4 bg-transparent rounded-full shadow-lg focus:outline-none"
+            aria-label="Toggle Music">
+            <svg id="music-icon-svg" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path id="music-on" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 19V6l12-2v13m-6 5a3 3 0 110-6 3 3 0 010 6zm-6 0a3 3 0 110-6 3 3 0 010 6z" />
+                <path id="music-off" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12" class="hidden" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="background-music" loop>
+        <source src="./audio/Kasih Tak Sampai - Padi (Lirik Lagu).mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="./src/pop up.js"></script>
+    <script src="./src/salin.js"></script>
+    <script src="./src/countdown.js"></script>
+    <script src="./src/music.js"></script>
+    <script src="./src/tamu_Undangan.js"></script>
+    <script src="./src/data.js"></script>
+    <script src="./src/tanggal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
