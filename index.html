@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <!-- font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kablammo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Quicksand:wght@400;500;700&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="scroll-smooth">
+    <!-- Buka Undangan -->
+    <section>1
+        <div class=" hero min-h-screen relative " style="background-image: url(./Asset/cober\ 1.png);  
+        background-size: cover;  
+        background-position: right;  
+        background-repeat: no-repeat;">
+            <div class="hero-content text-neutral-content text-center absolute bottom-10 md:bottom-28 w-full">
+                <div class="max-w-md w-full flex flex-col items-center">
+                    <h1 class="text-5xl font-great-vibes text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">Raja &
+                        Shyta</h1>
+                    <p class="text-lg mt-5 font-montserrat text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">31
+                        Desember 2024</p>
+                    <h4 class="font-montserrat mt-2 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"> Dear <span
+                            class="font-montserrat text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+                            id="guest-name"></span></h4>
+                    <button id="openBtn"
+                        class="mt-5 flex font-montserrat items-center justify-center gap-2  px-6 py-3 text-center text-black rounded-full border bg-gradient-to-r from-[#FFE2B9] from-0% to-[#9C8A71] to-100%">
+                        Buka Undangan
+                    </button>
+                </div>
+            </div>
+            <div class="absolute bottom-[-1px] left-0 w-full z-10 md:hidden ">
+                <img src="Asset/batasan.png" alt="batasan" class="w-full block p-0 m-0">
+            </div>
+        </div>
+    </section>
+    <!-- Buka Undangan -->
+
+    <!-- Mempelai -->
+    <section class="bg-gradient-to-b from-[#E6E6E6] from-0% to-[#737373] to-100% ">
+        <div class=" hero min-h-screen relative " style="background-image: url(./Asset/bg\ waktu\ dan\ tempat.png);  
+        background-size: cover;  
+        background-position: center;  
+        background-repeat: no-repeat;">
+            <div class="container mx-auto py-12">
+                <div>
+                    <h1 class="text-5xl text-center font-great-vibes text-[#947549]">
+                        Om Swastyastu</h1>
+                    <p class=" mt-2 text-[12px] md:text-[16px] text-center font-montserrat text-[#404040]">Atas Asung
+                        Kertha Wara Nugraha Ida Sang Hyang Widhi
+                        Wasa/Tuhan Yang Maha Esa kami <br> bermaksud
+                        mengundang Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Pawiwahan (Pernikahan) Putra dan Putri
+                        kami.</p>
+                </div>
+                <div class="mt-6 flex justify-center">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-6xl">
+                        <!-- Profile Mempelai Laki -->
+                        <div class="group relative  rounded-xl p-8 text-center">
+                            <div class="relative inline-block">
+                                <div class="mx-auto" data-aos="fade-up">
+                                    <img src="Asset/mempelai laki.png" width="250" height="250" alt="Mempelai Laki-Laki"
+                                        class="max-w-full mx-auto lg:ml-0 ">
+                                    <!-- bunga -->
+                                    <div class="absolute -bottom-6 -left-16 transform translate-x-1 w-[200px] md:-left-28 md:w-[250px]"
+                                        data-aos="fade-up" data-aos-delay="200">
+                                        <img src="Asset/Vector/bunga laki.svg" alt="">
+                                    </div>
+                                    <!-- Bungan End -->
+                                </div>
+                            </div>
+
+                            <!-- Profile Info -->
+                            <div class="mt-6">
+                                <h3 class="text-5xl md:text-[64px] font-great-vibes text-[#947549]" data-aos="zoom-in"
+                                    data-aos-delay="250">
+                                    Rizky Febian
+                                </h3>
+
+                                <p class="mt-2 text-lg  md:text-[24px] font-montserrat font-bold text-[#404040]"
+                                    data-aos="zoom-in">
+                                    Rizky Febian Adriansyah Sutisna
+                                </p>
+                                <p class="mt-2 text-sm md:text-[16px] text-[#404040] font-montserrat"
+                                    data-aos="zoom-in">
+                                    Putra sulung dari pasangan</p>
+                                <p class="mt-2 text-lg md:text-[20px] text-[#404040] font-bold font-montserrat"
+                                    data-aos="zoom-in">
+                                    Sutrisna & Lina Jubaedah
+                                </p>
+                                <p class="mt-2 text-sm md:text-[16px] text-[#404040] font-montserrat"
+                                    data-aos="zoom-in">
+                                    Bandung, Jawa Barat
+                                </p>
+                            </div>
+                            <!-- Profil Info End -->
+                        </div>
+                        <!-- Profil Mempelai Laki End -->
+
+                        <!-- Profile Mempelai Perempuan -->
+                        <div class="group relative  rounded-xl p-8 text-center">
+                            <div class="relative inline-block">
+                                <div class="mx-auto" data-aos="zoom-in">
+                                    <img src="Asset/mempelai perempuan.png" width="250" height="250"
+                                        alt="Mempelai Laki-Laki" class="max-w-full mx-auto lg:ml-0 ">
+                                </div>
+                                <!-- bunga -->
+                                <div class="absolute -bottom-6 -right-16 transform translate-x-1 w-[200px] md:-right-32 md:w-[250px]"
+                                    data-aos="zoom-in">
+                                    <span><img src="Asset/vector/bunga perempuan.svg" alt=""></span>
+                                </div>
+                                <!-- Bungan End -->
+                            </div>
+
+                            <!-- Profile Info -->
+                            <div class="mt-6">
+                                <h3 class="text-5xl md:text-[64px] font-great-vibes text-[#947549]" data-aos="zoom-in"
+                                    data-aos-delay="250">
+                                    Mahalini
+                                </h3>
+
+                                <p class="mt-2 text-lg  md:text-[24px] font-montserrat font-bold text-[#404040]"
+                                    data-aos="zoom-in">
+                                    Ni Luh Ketut Mahalini Ayu Raharja
+                                </p>
+                                <p class="mt-2 text-sm md:text-[16px] text-[#404040] font-montserrat"
+                                    data-aos="zoom-in">
+                                    Putri ketiga dari pasangan</p>
+                                <p class="mt-2 text-lg md:text-[20px] text-[#404040] font-bold font-montserrat"
+                                    data-aos="zoom-in">
+                                    Gede Suraharja & Nyoman Serini
+                                </p>
+                                <p class="mt-2 text-sm md:text-[16px] text-[#404040] font-montserrat"
+                                    data-aos="zoom-in">
+                                    Denpasar, Bali
+                                </p>
+                                <!-- Profil Info End -->
+                            </div>
+                        </div>
+                        <!-- Profil Mempelai Perempuan END -->
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="mt-14">
+                    <!-- Judul -->
+                    <h1 class="text-[48px] md:text-[80px] text-center font-great-vibes text-[#947549] mb-10"
+                        data-aos="zoom-in">
+                        Waktu & Tempat
+                    </h1>
+
+                    <!-- Container utama -->
+                    <div class="mx-4 md:mx-auto font-montserrat" style="max-width: 32rem;">
+                        <div class="bg-black/55 backdrop-blur-md border border-white/30 rounded-3xl p-6 shadow-lg w-full"
+                            data-aos="zoom-in">
+                            <div class="relative">
+                                <img src="Asset/Vector/bunga waktu.svg" alt=""
+                                    class="md:scale-x-125 absolute -top-28 -left-4 -translate-x-1/2 w-[200px] h-[200px] md:w-[243px] md:h-[259px] -z-50">
+
+                                <div class="flex" id="date-section">
+                                    <div class="text-white pr-5 md:pr-12 font-bold">
+                                        <span class="text-5xl md:text-[100px] mt-7 md:mt-0 font-bold block"
+                                            id="day-counter">01</span>
+                                        <span
+                                            class="text-xl md:text-[40px] mt-3 md:mb-4 text-center uppercase font-medium block">NOV</span>
+                                        <span class="text-xl md:text-[40px] text-center font-light block">2024</span>
+                                    </div>
+
+                                    <div class="flex-1">
+                                        <h3 class=" text-[24px] md:text-[40px] italic font-semibold text-white mb-4">
+                                            Resepsi
+                                        </h3>
+                                        <div class="space-y-3">
+                                            <div class="flex items-start gap-2">
+                                                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M20 13C20 17.4183 16.4183 21 12 21C7.58172 21 4 17.4183 4 13C4 8.58172 7.58172 5 12 5C16.4183 5 20 8.58172 20 13Z"
+                                                        stroke="white" stroke-width="1.5" stroke-linejoin="round">
+                                                    </path>
+                                                    <path d="M12 9V13L15 16" stroke="white" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                                <span class="text-sm text-white/80">16.00 WITA-SELESAI</span>
+                                            </div>
+                                            <div class="flex items-start gap-2">
+                                                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6.81207 6.05324C9.53921 2.87158 14.4614 2.87158 17.1885 6.05324C19.382 8.61225 19.382 12.3884 17.1885 14.9474L13.0785 19.7424C12.7864 20.0831 12.6404 20.2535 12.4797 20.3413C12.1809 20.5045 11.8197 20.5045 11.5209 20.3413C11.3602 20.2535 11.2142 20.0831 10.9221 19.7424L6.81207 14.9474C4.61863 12.3884 4.61863 8.61225 6.81207 6.05324Z"
+                                                        stroke="white" stroke-width="1.5"></path>
+                                                    <path
+                                                        d="M14 10C14 11.1046 13.1046 12 12 12C10.8954 12 10 11.1046 10 10C10 8.89543 10.8954 8 12 8C13.1046 8 14 8.89543 14 10Z"
+                                                        stroke="white" stroke-width="1.5"></path>
+                                                </svg>
+                                                <span class="text-sm text-white/80">Puri Gerenceng Pemecutan, Jalan
+                                                    Sutomo,
+                                                    Denpasar
+                                                    Utara, Bali</span>
+                                            </div>
+                                        </div>
+                                        <a href="https://maps.app.goo.gl/v33YBPGHYwW1ZaWc7" target="_blank"
+                                            class="mt-6 inline-block rounded-full  bg-gradient-to-r from-[#FFE2B9] from-0% to-[#9C8A71] to-100% px-8 py-2 md:px-[72px] text-center text-sm font-medium text-white hover:bg-gold hover:ring-1 hover:ring-brown focus:outline-none focus:ring active:text-brown w-full md:w-auto">
+                                            Buka Lokasi
+                                        </a>
+                                    </div>
+                                </div>
+                                <img src="Asset/Vector/bunga waktu kiri.svg" alt=""
+                                    class="md:scale-x-125 absolute -bottom-28 -right-60 -translate-x-1/2 w-[200px] h-[200px] md:w-[230px] md:h-[239px] -z-50">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Catatan Tambahan -->
+                    <div class=" mt-10 text-center w-full px-4 mb-8 md:mb-14 font-montserrat">
+                        <p class="text-xs md:text-lg font-bold text-[#404040]" data-aos="zoom-in">
+                            Merupakan suatu kebahagiaan dan kehormatan bagi kami, <br> apabila Bapak/ Ibu/ Saudara/i,
+                            berkenan hadir
+                            untuk memberikan doa restu.
+                        </p>
+                        <p class="text-xs md:text-xs font-normal text-[#404040] mt-8" data-aos="zoom-in">Atas kehadiran
+                            dan doa
+                            restunya kami ucapkan
+                            terimakasih
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Mempelai End -->
+
+    <section
+        class=" bg-gradient-to-b from-[#161616] from-0% to-[#000000] to-100% relative min-h-screen flex flex-col items-center justify-start py-10">
+
+        <div class="mb-10" data-aos="zoom-in">
+            <h1 class="text-4xl md:text-5xl text-center font-great-vibes text-[#FFE2B9]">
+                Hari Bahagia
+            </h1>
+        </div>
+        <!-- Countdown -->
+        <div class=" flex items-center w-full max-w-md  mx-auto  mt-[-10px]">
+            <div class="relative mx-6" data-aos="zoom-in">
+                <!-- Gambar -->
+                <img src="./Asset/countdown.png" alt="Hari Bahagia" class="w-full h-auto rounded-xl ">
+
+                <!-- Overlay dan Konten -->
+                <div
+                    class="absolute inset-0 bg-opacity-30 flex flex-col justify-center items-center text-white px-4 font-montserrat simply-countdown">
+                    <!-- Timer -->
+                    <div class="mt-[135px] md:mt-[150px] grid grid-cols-4 gap-6 text-center">
+                        <!-- Hari -->
+                        <div class="rounded-lg backdrop-blur-lg bg-white/30 hari">
+                            <p class="text-4xl md:text-5xl font-bold">01</p>
+                            <p class="text-base md:text-lg">Hari</p>
+                        </div>
+                        <!-- Jam -->
+                        <div class="rounded-lg backdrop-blur-lg bg-white/30 jam">
+                            <p class="text-4xl md:text-5xl font-bold">00</p>
+                            <p class="text-base md:text-lg">Jam</p>
+                        </div>
+                        <!-- Menit -->
+                        <div class="rounded-lg backdrop-blur-lg bg-white/30 menit">
+                            <p class="text-4xl md:text-5xl font-bold">27</p>
+                            <p class="text-base md:text-lg">Menit</p>
+                        </div>
+                        <!-- Detik -->
+                        <div class="rounded-lg backdrop-blur-lg bg-white/30 detik">
+                            <p class="text-4xl md:text-5xl font-bold">19</p>
+                            <p class="text-base md:text-lg">Detik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 text-center w-full px-4 mb-8 md:mb-14 font-montserrat">
+            <p class="text-xs md:text-sm font-normal text-white">Siang dan malam berganti begitu cepat, di antara
+                saat-saat mendebarkan yang belum <br> pernah kami rasakan
+                sebelumnya. Kami nantikan kehadiran para keluarga dan sahabat, <br> untuk menjadi saksi ikrar janji suci
+                kami
+                di
+                hari yang bahagia.</p>
+        </div>
+
+        <!-- Countdown END -->
+
+        <!-- Gallery -->
+        <div class="mt-17 container">
+            <h1 class="text-4xl md:text-5xl text-center font-great-vibes text-[#947549]" data-aos="zoom-out">
+                Momen Bahagia
+            </h1>
+        </div>
+        <div class="mt-10 max-w-6xl mx-2 md:mx-10">
+            <div class="grid grid-cols-3 gap-4">
+                <img src="./Asset/gallery/image.png" alt="Image 1" class="w-[354px] h-[472px] object-cover">
+                <img src="./Asset/gallery/gambar 2.png" alt="Image 2" class="w-[354px] h-[472px] object-cover">
+                <img src="./Asset/gallery/gambar 3.png" alt="Image 3" class="w-[354px] h-[472px] object-cover">
+                <img src="./Asset/gallery/gambar 4.png" alt="Image 4" class="w-[354px] h-[472px] object-cover">
+                <img src="./Asset/gallery/gambar 5.png" alt="Image 5" class="w-[354px] h-[472px] object-cover">
+                <img src="./Asset/gallery/gambar 6.png" alt="Image 6" class="w-[354px] h-[472px] object-cover">
+                <img src="./Asset/gallery/gambar 7.png" alt="Image 7" class="w-[354px] h-[472px] object-cover">
+                <img src="./Asset/gallery/gambar 8.png" alt="Image 8" class="w-[354px] h-[472px] object-cover">
+                <img src="./Asset/gallery/gambar 9.png" alt="Image 9" class="w-[354px] h-[472px] object-cover">
+            </div>
+        </div>
+
+        <!-- Pop UP -->
+        <div id="popupModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-80 flex items-center justify-center">
+            <div class="relative">
+                <!-- Gambar di pop up -->
+                <img id="popupImage" class="max-h-screen rounded-lg">
+                <!-- Tombol Close -->
+                <button onclick="closePopup()"
+                    class="absolute top-2 right-2 text-white text-2xl bg-black bg-opacity-50 rounded-full px-4 py-2">
+                    &times;
+                </button>
+                <!-- Navigasi -->
+                <button id="prevButton"
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-4xl bg-black bg-opacity-50 rounded-full px-3 py-1">
+                    &#10094; <!-- Panah Kiri -->
+                </button>
+                <button id="nextButton"
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-4xl bg-black bg-opacity-50 rounded-full px-3 py-1">
+                    &#10095; <!-- Panah Kanan -->
+                </button>
+            </div>
+        </div>
+        <!-- pop up End -->
+    </section>
+</body>
+
+</html>
