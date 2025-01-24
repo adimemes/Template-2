@@ -1,50 +1,39 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const dateSection = document.getElementById("date-section");
-    const dayCounter = document.getElementById("day-counter");
-  
-    // Variable untuk tracking animasi di level global
-    let hasAnimated = false;
-  
-    function startCounter() {
-      let counter = 1;
-      const target = 25;
-      const interval = 150;
-  
-      const countUp = setInterval(() => {
-        if (counter <= target) {
-          dayCounter.textContent = counter < 10 ? `0${counter}` : counter;
-          counter++;
-        } else {
-          clearInterval(countUp);
-        }
-      }, interval);
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to get URL parameters
+    function getUrlParams() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return {
+            nama: urlParams.get('n') || '',
+            pronoun: urlParams.get('p') || ''
+        };
     }
-  
-    // Intersection Observer untuk memantau elemen
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !hasAnimated) {
-            // Hanya jalankan jika belum pernah dianimasikan
-            dateSection.classList.add("visible");
-            startCounter();
-            hasAnimated = true; // Set flag menjadi true dan tidak akan pernah direset
-  
-            // Optional: Disconnect observer karena kita tidak perlu memantau lagi
-            observer.disconnect();
-          } else if (!entry.isIntersecting) {
-            // Hanya remove class visible, tapi tidak reset hasAnimated
-            dateSection.classList.remove("visible");
-          }
-        });
-      },
-      {
-        // Opsi tambahan untuk mengontrol kapan observer trigger
-        threshold: 0.5, // Trigger ketika 50% elemen terlihat
-      }
-    );
-  
-    // Mulai memantau elemen
-    observer.observe(dateSection);
-  });
-  
+
+    // Function to format guest name
+    function formatGuestName(nama, pronoun) {
+        let formattedName = '';
+
+        if (pronoun && nama) {
+            formattedName = `${pronoun} ${nama}`;
+        } else if (nama) {
+            formattedName = `${nama}`;
+        } else {
+            formattedName = ' Tamu Undangan';
+        }
+
+        return formattedName.trim();
+    }
+
+    // Get parameters and update the DOM
+    const { nama, pronoun } = getUrlParams();
+    const guestNameElement = document.getElementById('guest-name');
+
+    if (guestNameElement) {
+        guestNameElement.textContent = formatGuestName(nama, pronoun);
+    }
+
+    // If you need to update a form field with the name
+    const namaInput = document.getElementById('nama');
+    if (namaInput) {
+        namaInput.value = nama;
+    }
+});
