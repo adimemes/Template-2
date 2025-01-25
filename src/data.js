@@ -56,9 +56,9 @@ function addUcapanToList(nama, ucapan, kehadiran) {
 
   // Menambahkan kelas-kelas styling sesuai dengan style yang Anda inginkan
   ucapanElement.classList.add(
-    "bg-black",
+    "bg-black/55",
     "border",
-    "border-black",
+    "border-black/55",
     "rounded-xl",
     "p-6",
     "backdrop-blur-sm",
@@ -105,9 +105,9 @@ function fetchComments() {
       data.forEach((ucapan) => {
         const ucapanElement = document.createElement("div");
         ucapanElement.classList.add(
-          "bg-black",
+          "bg-black/55",
           "border",
-          "border-black",
+          "border-black/55",
           "rounded-xl",
           "p-6",
           "backdrop-blur-sm",

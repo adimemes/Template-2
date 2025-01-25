@@ -65,7 +65,7 @@ function renderMessages() {
         msg.message.split(/\s+/).length > 100 ? '<hr class="separator" />' : "";
 
       return `
-          <div class="bg-black border border-black rounded-xl p-6 backdrop-blur-sm mb-4 transition-all">
+          <div class="bg-black/55 border border-black/55 rounded-xl p-6 backdrop-blur-sm mb-4 transition-all">
             <div class="space-y-2">
                 <div class="flex items-center justify-between mx-8">
                     <h3 class="font-semibold text-[#FFE2B9]">${msg.name}</h3>
@@ -123,7 +123,7 @@ styleSheet.textContent = `
     }
 
     #listUcapan::-webkit-scrollbar-track {
-        background: #9E8C73 ; /* Warna track scrollbar */
+        background: #ffffff ; /* Warna track scrollbar */
         border-radius: 3px;
     }
 
