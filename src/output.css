@@ -2672,8 +2672,8 @@ details.collapse summary::-webkit-details-marker {
   left: -4rem;
 }
 
-.-right-14 {
-  right: -3.5rem;
+.-right-16 {
+  right: -4rem;
 }
 
 .-right-36 {
@@ -2738,6 +2738,18 @@ details.collapse summary::-webkit-details-marker {
 
 .top-full {
   top: 100%;
+}
+
+.-right-1 {
+  right: -0.25rem;
+}
+
+.-right-14 {
+  right: -3.5rem;
+}
+
+.-right-\[60px\] {
+  right: -60px;
 }
 
 .-z-50 {
