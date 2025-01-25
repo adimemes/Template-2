@@ -65,7 +65,7 @@ function renderMessages() {
         msg.message.split(/\s+/).length > 100 ? '<hr class="separator" />' : "";
 
       return `
-          <div class="bg-black/40 border border-white/20 rounded-xl p-6 backdrop-blur-sm mb-4 transition-all">
+          <div class="bg-black border border-black rounded-xl p-6 backdrop-blur-sm mb-4 transition-all">
             <div class="space-y-2">
                 <div class="flex items-center justify-between mx-8">
                     <h3 class="font-semibold text-[#FFE2B9]">${msg.name}</h3>
@@ -114,7 +114,7 @@ const styleSheet = document.createElement("style");
 styleSheet.textContent = `
     #listUcapan {
         padding: 1rem;
-        scrollbar-color: #00000  ;
+        scrollbar-color: #ffffff  ;
     }
 
     /* Styling Scrollbar */

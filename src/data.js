@@ -56,14 +56,14 @@ function addUcapanToList(nama, ucapan, kehadiran) {
 
   // Menambahkan kelas-kelas styling sesuai dengan style yang Anda inginkan
   ucapanElement.classList.add(
-    "bg-black/40", 
-    "border", 
-    "border-white/20", 
-    "rounded-xl", 
-    "p-6", 
-    "backdrop-blur-sm", 
-    "mb-4", 
-    "transition-all" 
+    "bg-black",
+    "border",
+    "border-black",
+    "rounded-xl",
+    "p-6",
+    "backdrop-blur-sm",
+    "mb-4",
+    "transition-all"
   );
 
   ucapanElement.innerHTML = `
@@ -105,9 +105,9 @@ function fetchComments() {
       data.forEach((ucapan) => {
         const ucapanElement = document.createElement("div");
         ucapanElement.classList.add(
-          "bg-black/40",
+          "bg-black",
           "border",
-          "border-white/20",
+          "border-black",
           "rounded-xl",
           "p-6",
           "backdrop-blur-sm",
