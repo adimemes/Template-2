@@ -1,5 +1,5 @@
     // Target tanggal dan waktu akhir
-    const countdownTarget = new Date("2025-01-31T00:00:00").getTime(); // Ganti dengan tanggal target
+    const countdownTarget = new Date("2025-02-27T00:00:00").getTime(); // Ganti dengan tanggal target
 
     // Update countdown setiap 1 detik
     const timerInterval = setInterval(() => {
