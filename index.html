@@ -14,15 +14,36 @@
     <link rel="stylesheet" href="src/output.css">
     <!-- Animasi -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- styling -->
+    <style>
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            object-position: right;
+        }
+
+        .hero-image.active {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body class="overflow-hidden scroll-smooth">
     <!-- Buka Undangan -->
     <section id="landing">
-        <div class=" hero min-h-screen relative " style="background-image: url(./Asset/cober\ 1.png);  
-        background-size: cover;  
-        background-position: right;  
-        background-repeat: no-repeat;">
+        <div class="hero-images">
+            <!-- Gambar-gambar yang akan berganti -->
+            <img src="./Asset/cober 1.png" class="hero-image active" alt="Background 1">
+            <img src="./Asset/Cover 2.png" class="hero-image" alt="Background 2">
+        </div>
+        <div class=" hero min-h-screen relative ">
             <!-- bagian Utama -->
             <div class="hero-content text-neutral-content text-center absolute bottom-10 md:bottom-28 w-full">
                 <div class="max-w-md w-full flex flex-col items-center">
@@ -31,7 +52,8 @@
                     <p class="text-[15px] mt-[6px] mb-2 font-montserrat text-white drop-shadow-lg font-bold">31
                         Desember 2024</p>
                     <h4 class="font-montserrat mt-1 mb-1 text-white drop-shadow-lg font-normal"> Kepada </h4>
-                    <h5 class=" mt-[6px] font-montserrat text-white drop-shadow-lg text-[24px] font-semibold" id="guest-name"></h5>
+                    <h5 class=" mt-[6px] font-montserrat text-white drop-shadow-lg text-[24px] font-semibold"
+                        id="guest-name"></h5>
                     <button id="openBtn"
                         class="mt-[20px] flex font-montserrat items-center justify-center font-semibold gap-2  px-6 py-3 text-center text-black rounded-full  bg-gradient-to-r from-[#FFE2B9] from-0% to-[#9C8A71] to-100% drop-shadow-lg">
                         Buka Undangan
@@ -56,7 +78,8 @@
             <div class="text-center mx-4">
                 <h1 class="text-[40px] md:text-[80px] font-great-vibes text-[#947549]" data-aos="zoom-in-up">Om
                     Swastyastu</h1>
-                <p class="mt-4 text-xs md:text-[20px] text-[#141414] px-16 font-montserrat leading-6" data-aos="zoom-in-up">
+                <p class="mt-4 text-xs md:text-[20px] text-[#141414] md:px-16 font-montserrat md:leading-6 leading-5"
+                    data-aos="zoom-in-up">
                     Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/Tuhan Yang Maha Esa kami bermaksud
                     mengundang Bapak/Ibu/Saudara/i pada Upacara Manusa Yadnya Pawiwahan (Pernikahan) Putra dan Putri
                     kami.
@@ -73,7 +96,8 @@
                             <!-- bunga -->
                             <div
                                 class="absolute -bottom-6 -left-16 transform translate-x-1 w-[200px] md:-left-28 md:w-[250px]">
-                                <img src="Asset/Vector/bunga laki.svg" alt="" data-aos="zoom-in" data-aos-duration="1000">
+                                <img src="Asset/Vector/bunga laki.svg" alt="" data-aos="zoom-in"
+                                    data-aos-duration="1000">
                             </div>
                             <!-- Bungan End -->
                         </div>
@@ -117,16 +141,21 @@
                     </div>
                     <!-- info -->
                     <div class="mt-6">
-                        <h3 class="text-5xl md:text-[64px] font-great-vibes text-[#947549]" data-aos="zoom-in-up">Mahalini
+                        <h3 class="text-5xl md:text-[64px] font-great-vibes text-[#947549]" data-aos="zoom-in-up">
+                            Mahalini
                         </h3>
-                        <p class="mt-2 text-lg  md:text-[24px] font-montserrat font-bold text-[#141414]" data-aos="zoom-in-up">
+                        <p class="mt-2 text-lg  md:text-[24px] font-montserrat font-bold text-[#141414]"
+                            data-aos="zoom-in-up">
                             Ni Luh Ketut Mahalini Ayu Raharja
                         </p>
-                        <p class="mt-2 text-sm md:text-[16px] text-[#141414] font-montserrat" data-aos="zoom-in-up">Putri ketiga dari pasangan</p>
-                        <p class="mt-2 text-lg md:text-[20px] text-[#141414] font-bold font-montserrat" data-aos="zoom-in-up">
+                        <p class="mt-2 text-sm md:text-[16px] text-[#141414] font-montserrat" data-aos="zoom-in-up">
+                            Putri ketiga dari pasangan</p>
+                        <p class="mt-2 text-lg md:text-[20px] text-[#141414] font-bold font-montserrat"
+                            data-aos="zoom-in-up">
                             Gede Suraharja & Nyoman Serini
                         </p>
-                        <p class="mt-2 text-sm md:text-[16px] text-[#141414] font-montserrat" data-aos="zoom-in-up">Denpasar, Bali</p>
+                        <p class="mt-2 text-sm md:text-[16px] text-[#141414] font-montserrat" data-aos="zoom-in-up">
+                            Denpasar, Bali</p>
                     </div>
                 </div>
             </div>
@@ -251,19 +280,19 @@
                             </div>
                             <!-- Jam -->
                             <div
-                                class="rounded-lg backdrop-blur-lg bg-[#D9D9D9]/10 pr-1 pl-1 md:pr-3 md:pl-3 hari border border-white drop-shadow-md">
+                                class="rounded-lg backdrop-blur-lg bg-[#D9D9D9]/10 pr-1 pl-1 md:pr-3 md:pl-3 jam border border-white drop-shadow-md">
                                 <p class="text-[26px] md:text-4xl font-bold">00</p>
                                 <p class="text-[10px] italic md:text-lg">Jam</p>
                             </div>
                             <!-- Menit -->
                             <div
-                                class="rounded-lg backdrop-blur-lg bg-[#D9D9D9]/10 pr-1 pl-1 md:pr-3 md:pl-3 hari border border-white drop-shadow-md">
+                                class="rounded-lg backdrop-blur-lg bg-[#D9D9D9]/10 pr-1 pl-1 md:pr-3 md:pl-3 menit border border-white drop-shadow-md">
                                 <p class="text-[26px] md:text-4xl font-bold">27</p>
                                 <p class="text-[10px] italic md:text-lg">Menit</p>
                             </div>
                             <!-- Detik -->
                             <div
-                                class="rounded-lg backdrop-blur-lg bg-[#D9D9D9]/10 pr-1 pl-1 md:pr-3 md:pl-3 hari border border-white drop-shadow-md">
+                                class="rounded-lg backdrop-blur-lg bg-[#D9D9D9]/10 pr-1 pl-1 md:pr-3 md:pl-3 detik border border-white drop-shadow-md">
                                 <p class="text-[26px] md:text-4xl font-bold">19</p>
                                 <p class="text-[10px] italic md:text-lg">Detik</p>
                             </div>
@@ -292,39 +321,39 @@
             </div>
             <div class=" mt-10 max-w-6xl mx-4 md:mx-10">
                 <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    <a href="./Asset/gallery/image.png" class="popup-link" data-aos="zoom-in-up" >
+                    <a href="./Asset/gallery/image.png" class="popup-link" data-aos="zoom-in-up">
                         <img src="./Asset/gallery/image.png" alt="Image 1"
-                            class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover" data-aos-duration="1000">
+                            class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
                     </a>
-                    <a href="./Asset/gallery/gambar 2.png" class="popup-link" data-aos="zoom-in-up" data-aos-duration="1500">
+                    <a href="./Asset/gallery/gambar 2.png" class="popup-link" data-aos="zoom-in-up">
                         <img src="./Asset/gallery/gambar 2.png" alt="Image 1"
-                            class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover" >
+                            class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
                     </a>
-                    <a href="./Asset/gallery/gambar 3.png" class="popup-link" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <a href="./Asset/gallery/gambar 3.png" class="popup-link" data-aos="zoom-in-up">
                         <img src="./Asset/gallery/gambar 3.png" alt="Image 1"
                             class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
                     </a>
-                    <a href="./Asset/gallery/gambar 4.png" class="popup-link" data-aos="zoom-in-up" data-aos-duration="2500">
+                    <a href="./Asset/gallery/gambar 4.png" class="popup-link" data-aos="zoom-in-up">
                         <img src="./Asset/gallery/gambar 4.png" alt="Image 1"
                             class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
                     </a>
-                    <a href="./Asset/gallery/gambar 5.png" class="popup-link" data-aos="zoom-in-up" data-aos-duration="3000">
+                    <a href="./Asset/gallery/gambar 5.png" class="popup-link" data-aos="zoom-in-up">
                         <img src="./Asset/gallery/gambar 5.png" alt="Image 1"
                             class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
                     </a>
-                    <a href="./Asset/gallery/gambar 6.png" class="popup-link" data-aos="zoom-in-up" data-aos-duration="3500">
+                    <a href="./Asset/gallery/gambar 6.png" class="popup-link" data-aos="zoom-in-up">
                         <img src="./Asset/gallery/gambar 6.png" alt="Image 1"
                             class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
                     </a>
-                    <a href="./Asset/gallery/gambar 7.png" class="popup-link" data-aos="zoom-in-up" data-aos-duration="4000">
+                    <a href="./Asset/gallery/gambar 7.png" class="popup-link" data-aos="zoom-in-up">
                         <img src="./Asset/gallery/gambar 7.png" alt="Image 1"
                             class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
                     </a>
-                    <a href="./Asset/gallery/gambar 8.png" class="popup-link" data-aos="zoom-in-up" data-aos-duration="4500">
+                    <a href="./Asset/gallery/gambar 8.png" class="popup-link" data-aos="zoom-in-up">
                         <img src="./Asset/gallery/gambar 8.png" alt="Image 1"
                             class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
                     </a>
-                    <a href="./Asset/gallery/gambar 9.png" class="popup-link" data-aos="zoom-in-up" data-aos-duration="5000">
+                    <a href="./Asset/gallery/gambar 9.png" class="popup-link" data-aos="zoom-in-up">
                         <img src="./Asset/gallery/gambar 9.png" alt="Image 1"
                             class="w-full h-[300px] sm:h-[400px] md:w-[354px] md:h-[472px] object-cover">
                     </a>
@@ -550,6 +579,26 @@
             easing: 'ease-in-out', // Gerakan animasi lebih halus
         });
 
+    </script>
+
+    <!-- bc ganti -->
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll('.hero-image');
+
+        function changeImage() {
+            // Hapus kelas 'active' dari gambar saat ini
+            images[index].classList.remove('active');
+
+            // Tentukan gambar berikutnya
+            index = (index + 1) % images.length;
+
+            // Tambahkan kelas 'active' ke gambar berikutnya
+            images[index].classList.add('active');
+        }
+
+        // Ubah gambar setiap 5 detik
+        setInterval(changeImage, 5000);
     </script>
 </body>
 
