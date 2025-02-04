@@ -2660,28 +2660,36 @@ details.collapse summary::-webkit-details-marker {
   inset: 0px;
 }
 
-.-bottom-24 {
-  bottom: -6rem;
-}
-
 .-bottom-6 {
   bottom: -1.5rem;
+}
+
+.-bottom-\[83px\] {
+  bottom: -83px;
 }
 
 .-left-16 {
   left: -4rem;
 }
 
-.-right-36 {
-  right: -9rem;
+.-right-40 {
+  right: -10rem;
 }
 
 .-right-\[60px\] {
   right: -60px;
 }
 
+.-right-\[84px\] {
+  right: -84px;
+}
+
 .-top-20 {
   top: -5rem;
+}
+
+.-top-6 {
+  top: -1.5rem;
 }
 
 .bottom-10 {
@@ -2744,6 +2752,26 @@ details.collapse summary::-webkit-details-marker {
   top: 100%;
 }
 
+.-bottom-20 {
+  bottom: -5rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-40 {
+  bottom: 10rem;
+}
+
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
+.bottom-24 {
+  bottom: 6rem;
+}
+
 .-z-50 {
   z-index: -50;
 }
@@ -2760,8 +2788,17 @@ details.collapse summary::-webkit-details-marker {
   z-index: 50;
 }
 
+.-z-10 {
+  z-index: -10;
+}
+
 .m-0 {
   margin: 0px;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mx-4 {
@@ -2772,11 +2809,6 @@ details.collapse summary::-webkit-details-marker {
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .mx-9 {
@@ -2832,6 +2864,10 @@ details.collapse summary::-webkit-details-marker {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.ml-\[-10px\] {
+  margin-left: -10px;
 }
 
 .ms-0\.5 {
@@ -2991,6 +3027,10 @@ details.collapse summary::-webkit-details-marker {
   height: 300px;
 }
 
+.h-\[90px\] {
+  height: 90px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -3023,6 +3063,10 @@ details.collapse summary::-webkit-details-marker {
   width: 1.25rem;
 }
 
+.w-\[110px\] {
+  width: 110px;
+}
+
 .w-\[160px\] {
   width: 160px;
 }
@@ -3043,8 +3087,16 @@ details.collapse summary::-webkit-details-marker {
   width: calc(100% - 2rem);
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[120px\] {
+  width: 120px;
 }
 
 .max-w-6xl {
@@ -3490,11 +3542,6 @@ details.collapse summary::-webkit-details-marker {
   padding-right: 1.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -3678,14 +3725,6 @@ details.collapse summary::-webkit-details-marker {
 
 .italic {
   font-style: italic;
-}
-
-.leading-6 {
-  line-height: 1.5rem;
-}
-
-.leading-3 {
-  line-height: .75rem;
 }
 
 .leading-5 {
@@ -3933,8 +3972,8 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 768px) {
-  .md\:-bottom-28 {
-    bottom: -7rem;
+  .md\:-bottom-24 {
+    bottom: -6rem;
   }
 
   .md\:-left-28 {
@@ -3949,6 +3988,10 @@ details.collapse summary::-webkit-details-marker {
     right: -8rem;
   }
 
+  .md\:-right-44 {
+    right: -11rem;
+  }
+
   .md\:-right-60 {
     right: -15rem;
   }
@@ -3961,14 +4004,44 @@ details.collapse summary::-webkit-details-marker {
     bottom: 7rem;
   }
 
+  .md\:-top-10 {
+    top: -2.5rem;
+  }
+
+  .md\:-bottom-28 {
+    bottom: -7rem;
+  }
+
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .md\:bottom-3 {
+    bottom: 0.75rem;
+  }
+
+  .md\:bottom-32 {
+    bottom: 8rem;
+  }
+
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
 
+  .md\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
 
   .md\:mb-14 {
@@ -3977,6 +4050,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
   }
 
   .md\:mt-0 {
@@ -3995,6 +4072,10 @@ details.collapse summary::-webkit-details-marker {
     display: none;
   }
 
+  .md\:h-\[170px\] {
+    height: 170px;
+  }
+
   .md\:h-\[239px\] {
     height: 239px;
   }
@@ -4011,6 +4092,10 @@ details.collapse summary::-webkit-details-marker {
     width: 50%;
   }
 
+  .md\:w-\[200px\] {
+    width: 200px;
+  }
+
   .md\:w-\[230px\] {
     width: 230px;
   }
@@ -4025,10 +4110,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:w-\[354px\] {
     width: 354px;
-  }
-
-  .md\:w-auto {
-    width: auto;
   }
 
   .md\:scale-x-125 {
@@ -4049,9 +4130,24 @@ details.collapse summary::-webkit-details-marker {
     padding-right: 4rem;
   }
 
-  .md\:px-\[72px\] {
-    padding-left: 72px;
-    padding-right: 72px;
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:py-64 {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .md\:py-44 {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
   }
 
   .md\:pl-3 {
